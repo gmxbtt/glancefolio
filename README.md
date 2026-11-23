@@ -13,7 +13,7 @@ crossed level lands as a real Telegram message on your phone.
 - **Portfolio (Screen 1):** live BTC/ETH/SOL prices, total value, 24h change,
   P&L with cost basis. Cursor moves between holdings; tap opens the detail.
 - **Alerts (Screen 2):** threshold alerts, one per row (`● BTC > $70,000`).
-  Tap toggles arm/disarm; a fired alert shows `✓` + time and can be re-armed.
+  Tap toggles arm/disarm; a fired alert shows `FIRED` + time and can be re-armed.
 - **Coin detail (Screen 3):** price, 24h change + high/low, holding value,
   position P&L, alert state. Tap cycles alert off → above → below → off.
 - **Telegram bot:** `/price`, `/alert`, `/alerts`, `/portfolio`, `/add`,
@@ -33,7 +33,7 @@ app shows fired alerts when you open it. The demo video shows the real flow.
 - `bot/` — the alert worker + Telegram long-poller (Node, no dependencies).
   Polls prices every 60 s, checks alert levels (2 consecutive polls beyond
   the level, 15-minute cooldown per alert, 1% re-arm hysteresis), publishes
-  state to GitHub Pages. Run: `GLANCEFOLIO_BOT_TOKEN=<token> node bot/src/index.mjs`
+  state to GitHub Pages. Run: `TELEGRAM_BOT_TOKEN=<token> node bot/src/index.mjs`
   (without a token it still polls + publishes, Telegram disabled).
 - `state/alerts.json` (on the `gh-pages` branch) — the bot's published
   state, read by the glasses app when online:
