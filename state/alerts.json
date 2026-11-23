@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": 1795454640688,
+  "updatedAt": 1795454660684,
   "source": "CG",
   "prices": {
     "BTC": {
@@ -39,7 +39,7 @@
       "direction": "below",
       "price": 70000,
       "armed": true,
-      "firedAt": null
+      "firedAt": 1795454660195
     }
   ]
 }
