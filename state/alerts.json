@@ -1,1 +1,24 @@
-{"version":1,"updatedAt":0,"source":"none","prices":{},"alerts":[]}
+{
+  "version": 1,
+  "updatedAt": 1795454590419,
+  "source": "none",
+  "prices": {},
+  "alerts": [
+    {
+      "id": "BTC-above",
+      "symbol": "BTC",
+      "direction": "above",
+      "price": 70000,
+      "armed": true,
+      "firedAt": null
+    },
+    {
+      "id": "SOL-below",
+      "symbol": "SOL",
+      "direction": "below",
+      "price": 70,
+      "armed": true,
+      "firedAt": null
+    }
+  ]
+}
